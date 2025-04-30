@@ -1,6 +1,7 @@
+# Ignore toàn bộ WordPress core
 wp/*
-!wp-content/
-wp-content/*
+!wp/wp-content/
+wp/wp-content/*
 !wp/wp-content/themes/
 !wp/wp-content/plugins/
 
@@ -9,7 +10,7 @@ wp-content/*
 
 # Giả sử bạn chỉ muốn giữ lại theme `my-theme` và plugin `my-plugin`
 wp/wp-content/themes/*
-!wp/wp-content/themes/my-theme/
+!wp/wp-content/themes/binhcodev/
 
 wp/wp-content/plugins/*
 !wp/wp-content/plugins/my-plugin/

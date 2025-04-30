@@ -1,0 +1,41 @@
+/*
+Theme Name: My Theme
+Theme URI: http://example.com/
+Author: Your Name
+Author URI: http://example.com/
+Description: My first WordPress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: mytheme
+*/
+.products-collection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.product-item {
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-gallery {
+  margin-bottom: 15px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: #e60023;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+wp/*
+!wp-content/
+wp-content/*
+!wp/wp-content/themes/
+!wp/wp-content/plugins/
+
+# Ignore tất cả theme và plugin trừ theme/plugin bạn làm
+# 👉 Chỉnh sửa tên bên dưới theo đúng thư mục của bạn
+
+# Giả sử bạn chỉ muốn giữ lại theme `my-theme` và plugin `my-plugin`
+wp/wp-content/themes/*
+!wp/wp-content/themes/my-theme/
+
+wp/wp-content/plugins/*
+!wp/wp-content/plugins/my-plugin/
+
+# Bỏ qua các thư mục không cần thiết
+wp/wp-content/uploads/
+wp/wp-content/cache/
+wp/wp-content/upgrade/
+wp/wp-content/backup-*/
+
+# Bỏ file cấu hình chứa DB credentials
+wp/wp-config.php
+
+# Ignore log, môi trường, hệ thống
+*.log
+.env
+.DS_Store
+
+# Ignore thư viện
+vendor/
+node_modules/

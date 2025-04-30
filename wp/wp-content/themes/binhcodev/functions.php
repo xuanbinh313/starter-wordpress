@@ -6,9 +6,24 @@ function mytheme_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 
-function my_custom_menu_li_class($classes, $item)
+function mytheme_setup()
 {
-    $classes[] = 'test';
-    return $classes;
+    add_theme_support('custom-logo', [
+        'height' => 40,
+        'width' => 200,
+        'flex-height' => true,
+        'flex-width' => true,
+    ]);
 }
-add_filter('nav_menu_css_class', 'my_custom_menu_li_class', 10, 2);
+add_action('after_setup_theme', 'mytheme_setup');
+
+function mytheme_register_menus()
+{
+    register_nav_menus([
+        'primary_menu' => __('Primary Menu', 'mytheme'),
+    ]);
+}
+add_action('after_setup_theme', 'mytheme_register_menus');
+
+// functions.php (hoặc trong file setup khác của bạn)
+require_once get_template_directory() . '/inc/shortcodes/init.php';

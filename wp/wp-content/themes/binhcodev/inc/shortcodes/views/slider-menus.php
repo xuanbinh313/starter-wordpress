@@ -2,146 +2,47 @@
     <div class="w-full flex select-none">
         <div class="bg-[#fff] w-[200px] h-[368px] shrink-0 rounded-md shadow-3dtv border-[1px] border-[#ddd] p-[5px] flex-col mr-[10px] hidden w800:flex wrapper shrink-0"
             data-v-20128574="">
-            <nav class="w-full flex flex-col justify-between flex-1" data-v-20128574=""><!--[-->
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sua-dien-thoai-1.png"
-                        loading="lazy" alt="Sửa điện thoại" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/dich-vu/sua-chua-dien-thoai" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Sửa điện thoại</a><svg
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                        role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/laptop-1.png"
-                        loading="lazy" alt="Sửa Chữa laptop" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/sua-chua-laptop" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Sửa Chữa
-                        laptop</a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mac-1.png"
-                        loading="lazy" alt="Sửa MacBook" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574="">
-                    <div class="text-xs w600:text-[12px] font-semibold alternative_name" data-v-20128574="">
-                        <p><a href="https://dienthoaivui.com.vn/sua-chua-macbook">Sửa MacBook</a>, <a
-                                href="https://dienthoaivui.com.vn/sua-chua-imac">iMac</a></p>
-                    </div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg>
-                </div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/may-cu-1.png"
-                        loading="lazy" alt="Máy cũ giá rẻ" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/may-cu" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Máy cũ giá rẻ</a><svg
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                        role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/phu-kien-1.png" loading="lazy"
-                        alt="Phụ kiện" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/phu-kien" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Phụ kiện</a><svg
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                        role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/may-tinh-bang-1.png"
-                        loading="lazy" alt="Sửa máy tính bảng" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/sua-may-tinh-bang" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Sửa máy tính
-                        bảng</a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/linh-kien-laptop.png"
-                        loading="lazy" alt="Linh kiện Laptop" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/linh-kien-laptop" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Linh kiện
-                        Laptop</a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/sua-airpods.png" loading="lazy"
-                        alt="Sửa AirPods" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/sua-chua-homepod-airpods" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Sửa
-                        AirPods</a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/dong-ho-1.png" loading="lazy"
-                        alt="Sửa Apple Watch" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/dich-vu/sua-chua-apple-watch" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Sửa Apple
-                        Watch</a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true" role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/thu-cu-doi-moi.png"
-                        loading="lazy" alt="Thu cũ lên đời" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/thu-cu-doi-moi" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Thu cũ lên
-                        đời</a><!---->
-                </div>
-                <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                    data-v-20128574=""><img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/tin-cong-nghe.png" loading="lazy"
-                        alt="Tin công nghệ" style="" width="40" height="40"
-                        class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover" data-v-20128574=""><a
-                        href="https://dienthoaivui.com.vn/tin-tuc" target="_self"
-                        class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">Tin công nghệ</a><svg
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                        role="img"
-                        class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
-                        data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
-                        <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg></div><!--]-->
-            </nav><!---->
+            <?php
+            $menu_items = wp_get_nav_menu_items('primary');
+            if ($menu_items) {
+                echo '<nav class="w-full flex flex-col justify-between flex-1" data-v-20128574="">';
+                foreach ($menu_items as $item) {
+                    if ($item->menu_item_parent != 0) {
+                        continue; // Chỉ lấy cấp 0
+                    }
+
+                    // Lấy ID danh mục sản phẩm từ object ID
+                    if ($item->object === 'product_cat') {
+                        $term_id = $item->object_id;
+                        $thumbnail_id = get_term_meta($term_id, 'thumbnail_id', true);
+                        $image_url = wp_get_attachment_url($thumbnail_id);
+                    } else {
+                        $image_url = get_template_directory_uri() . '/assets/images/default.png'; // fallback
+                    }
+
+                    ?>
+                    <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
+                        data-v-20128574="">
+                        <?php if ($image_url): ?>
+                            <img src="<?php echo esc_url($image_url); ?>" loading="lazy" alt="<?php echo esc_attr($item->title); ?>"
+                                width="40" height="40" class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover">
+                        <?php endif; ?>
+                        <a href="<?php echo esc_url($item->url); ?>" target="_self"
+                            class="text-xs w600:text-[12px] font-semibold" data-v-20128574="">
+                            <?php echo esc_html($item->title); ?>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                            role="img"
+                            class="icon item-arrow__right absolute right-0 top-1/2 stroke-[#fff0] text-[#cbcbcb] shrink-0 text-xl mx-[10px]"
+                            data-v-20128574="" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-dc707951="">
+                            <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                        </svg>
+                    </div>
+                    <?php
+                }
+                echo '</nav>';
+            }
+            ?>
         </div>
         <div class="slider-home w-full w800:shadow-3dtv w800:border-[1px] border-[#ddd] rounded-md relative overflow-hidden w800:bg-[#fff]"
             data-v-452d8909="">
@@ -304,8 +205,8 @@
                 </div>
             </div>
         </div>
-        <div class="w-[264px] ml-[10px] flex-col hidden w1024:flex gap-[10px] shrink-0"><!--[--><a
-                href="https://dienthoaivui.com.vn/phu-kien/cu-cap-sac/bwoo"
+        <div class="w-[264px] ml-[10px] flex-col hidden w1024:flex gap-[10px] shrink-0"><!--[-->
+            <a href="https://dienthoaivui.com.vn/phu-kien/cu-cap-sac/bwoo"
                 class="block w-full rounded-md shadow-3dtv border-[1px] border-[#ddd] overflow-hidden  right-banner_1"><img
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/0b819a51d3ab8a1d7496a9e1e0c51474.jpg"
                     loading="lazy" alt="CỦ CÁP CHÍNH HÃNG<br>Chỉ từ 25K" style="" width="690" height="300"
@@ -318,7 +219,8 @@
                 class="block w-full rounded-md shadow-3dtv border-[1px] border-[#ddd] overflow-hidden  right-banner_3"><img
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/88aa2ddb07dc88f07baab8f0ed1269ff.jpg"
                     loading="lazy" alt="CỦ CÁP SẠC PISEN<br>Từ 300" style="" width="690" height="300"
-                    class="w-full object-contain"></a><!--]--></div>
+                    class="w-full object-contain"></a><!--]-->
+        </div>
     </div>
     <div class="w-full pt-[5px]">
         <div class="w-full h-fit rounded-md shadow-3dtv border-[1px] border-[#ddd] overflow-hidden w600:mt-[10px]">

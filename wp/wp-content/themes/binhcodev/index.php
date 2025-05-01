@@ -14,38 +14,6 @@ get_header();
         <?php endif; ?>
     </main>
 </div>
-<script>
-    document.querySelectorAll('.item[data-v-20128574]').forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            // Thêm class "item--active"
-            item.classList.add('item--active');
-
-            // Kiểm tra đã có block chưa (để không thêm trùng)
-            const parent = item.parentElement;
-            const siblingContainer = parent.nextElementSibling;
-            if (!siblingContainer || !siblingContainer.classList.contains('sub-menu')) {
-                const newBlock = document.createElement('div');
-                newBlock.className = 'shadow-1dtv sub-menu rounded-md flex flex-wrap p-[20px]';
-                newBlock.textContent = item.getHTML();
-                newBlock.setAttribute('data-v-20128574', ''); // Gắn attribute vào đây
-                parent.parentElement.insertBefore(newBlock, parent.nextSibling);
-            }
-        });
-
-        item.addEventListener('mouseleave', () => {
-            // Xóa class khi rời chuột
-            item.classList.remove('item--active');
-
-            const parent = item.parentElement;
-            const siblingContainer = parent.nextElementSibling;
-
-            if (siblingContainer && siblingContainer.classList.contains('sub-menu')) {
-                siblingContainer.remove();
-            }
-        });
-    });
-</script>
-
 <?php
 get_footer();
 ?>

@@ -12,3 +12,5 @@ function mytheme_slider_menus_shortcode($atts)
     return ob_get_clean(); // Lấy nội dung đã include và trả về
 }
 add_shortcode('slider-menus', 'mytheme_slider_menus_shortcode');
+
+

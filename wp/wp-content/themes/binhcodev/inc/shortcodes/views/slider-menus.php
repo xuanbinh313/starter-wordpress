@@ -4,6 +4,9 @@
             data-v-20128574="">
             <?php
             $menu_items = wp_get_nav_menu_items('primary');
+            echo '<script>';
+            echo 'window.menu_items = ' . json_encode($menu_items) . ';';
+            echo '</script>';
             if ($menu_items) {
                 echo '<nav class="w-full flex flex-col justify-between flex-1" data-v-20128574="">';
                 foreach ($menu_items as $item) {
@@ -22,7 +25,7 @@
 
                     ?>
                     <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
-                        data-v-20128574="">
+                        data-id="<?php echo esc_attr($item->ID) ?>" data-v-20128574="">
                         <?php if ($image_url): ?>
                             <img src="<?php echo esc_url($image_url); ?>" loading="lazy" alt="<?php echo esc_attr($item->title); ?>"
                                 width="40" height="40" class="h-[25px] w-[25px] mx-[10px] shrink-0 object-cover">

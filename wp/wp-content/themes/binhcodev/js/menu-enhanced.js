@@ -6,8 +6,20 @@ sharedBlock.setAttribute('data-v-20128574', '');
 sharedBlock.style.display = 'none'; // Ẩn mặc định
 document.body.appendChild(sharedBlock); // Thêm vào cuối body
 let hideTimer = null;
+// Recursively render multi-level menu as JSON
+function renderMenuItems(parentId, menu_items) {
+    const items = menu_items.filter(item => item.menu_item_parent === parentId.toString());
+    if (items.length === 0) return [];
+    return items.map(item => ({
+        id: item.ID,
+        title: item.title,
+        url: item.url,
+        children: renderMenuItems(item.ID, menu_items)
+    }));
+}
 document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('mouseenter', () => {
+        console.log(item.getAttribute('data-id'));
         // Hủy ẩn nếu đang chờ
         clearTimeout(hideTimer);
         // Xóa class ở tất cả các item
@@ -19,51 +31,26 @@ document.querySelectorAll('.item').forEach(item => {
         // Lấy vị trí để chèn block (sau cha)
         const parent = item.parentElement;
         parent.parentElement.insertBefore(sharedBlock, parent.nextSibling);
-
-        // Cập nhật nội dung block
-        sharedBlock.innerHTML = `
-                <div data-v-20128574="" class="w-[20%] min-w-[185px] h-fit px-[10px] pt-[5px] pb-[10px] shrink-0"><strong
-                        class="text-sm font-bold">${item.textContent}</strong><a
-                        href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-iphone" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>iPhone</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-samsung" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Samsung</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-xiaomi" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Xiaomi</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-oppo" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>OPPO</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-vsmart" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Vsmart</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-sony" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Sony</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-vivo" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Vivo</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-huawei" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Huawei</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-asus" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Asus</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-nokia" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Nokia</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-chua-dien-thoai-realme" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>Realme</span> <!----></div>
-                    </a><a href="https://dienthoaivui.com.vn/sua-dien-thoai-oneplus" target="_self"
-                        class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
-                        <div class="py-[3px]"><span>OnePlus</span> <!----></div>
+        console.log(window.menu_items)
+        const id = item.getAttribute('data-id');
+        const content = renderMenuItems(id, window.menu_items);
+        console.log(content)
+        const result = content.map(item => `
+            <div data-v-20128574="" class="w-[20%] min-w-[185px] h-fit px-[10px] pt-[5px] pb-[10px] shrink-0">
+                <strong class="text-sm font-bold">${item.title}</strong>
+                ${item.children.map(child => `
+                    <a href="${child.url}" target="_self" class="text-[13px] font-thin text-[#6e6e6e] hover:text-dtv">
+                        <div class="py-[3px]"><span>${child.title}</span></div>
                     </a>
-                </div>
-            `;
-        sharedBlock.style.display = 'block';
+                `).join('')}
+            </div>
+            
+            `)
+        // Lấy vị trí của item để căn chỉnh block
+        // Cập nhật nội dung block
+        sharedBlock.innerHTML = result.join('');
+       
+        sharedBlock.style.display = 'flex';
     });
 
     item.addEventListener('mouseleave', () => {

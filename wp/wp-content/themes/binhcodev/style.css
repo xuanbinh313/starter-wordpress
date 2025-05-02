@@ -12226,20 +12226,6 @@ button.swiper-pagination-bullet {
     position: relative
 }
 
-.wrapper .sub-menu[data-v-20128574] {
-    background-color: #fff;
-    height: -moz-fit-content;
-    height: fit-content;
-    max-width: calc(1188px - 100%);
-    min-height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateX(100%);
-    width: calc(100vw - 100% - 12px);
-    z-index: 100
-}
-
 .item[data-v-20128574] {
     color: #444;
     position: relative

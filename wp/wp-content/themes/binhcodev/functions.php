@@ -27,3 +27,4 @@ add_action('after_setup_theme', 'mytheme_register_menus');
 
 // functions.php (hoặc trong file setup khác của bạn)
 require_once get_template_directory() . '/inc/shortcodes/init.php';
+require_once get_template_directory() . '/inc/helpers/init.php';

@@ -11,6 +11,7 @@ wp-content/*
 # Giả sử bạn chỉ muốn giữ lại theme `my-theme` và plugin `my-plugin`
 wp-content/themes/*
 !wp-content/themes/binhcodev/
+!wp-content/themes/fsetheme/
 !wp-content/themes/twentytwentythree/
 
 wp-content/plugins/*

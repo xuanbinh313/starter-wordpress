@@ -10,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Điện Thoại Vui - Sửa Điện Thoại, Laptop &amp; Bán Điện Thoại Cũ</title>
 
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-vue.CpjE5erv.css"
-        crossorigin=""> -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/Header.De5ibjrP.css"
         crossorigin="">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/Icon.q1ZgNOwO.css"

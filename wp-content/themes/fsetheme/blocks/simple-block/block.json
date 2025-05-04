@@ -1,0 +1,14 @@
+{
+    "apiVersion": 2,
+    "name": "fsetheme/simple-block",
+    "title": "Simple Block",
+    "category": "widgets",
+    "icon": "clock",
+    "description": "Hiển thị giờ hiện tại bằng PHP.",
+    "editorScript": "file:./build/index.js",
+    "style": "file:./style.css",
+    "editorStyle": "file:./editor.css",
+    "supports": {
+        "html": false
+    }
+}

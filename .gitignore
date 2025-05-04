@@ -1,18 +1,13 @@
-# Ignore toàn bộ WordPress core
+# Bỏ qua toàn bộ WordPress core
 *
 !wp-content/
 wp-content/*
 !wp-content/themes/
 !wp-content/plugins/
 
-# Ignore tất cả theme và plugin trừ theme/plugin bạn làm
-# 👉 Chỉnh sửa tên bên dưới theo đúng thư mục của bạn
-
 # Giả sử bạn chỉ muốn giữ lại theme `my-theme` và plugin `my-plugin`
-wp-content/themes/*
-!wp-content/themes/binhcodev/
-!wp-content/themes/fsetheme/
-!wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfive/
+wp-content/themes/twentytwentyfour/
 
 wp-content/plugins/*
 !wp-content/plugins/my-plugin/
@@ -34,3 +29,4 @@ wp-config.php
 # Ignore thư viện
 vendor/
 node_modules/
+**/node_modules/

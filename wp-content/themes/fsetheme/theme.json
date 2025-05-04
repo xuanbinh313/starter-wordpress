@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "settings": {
+        "layout": {
+            "contentSize": "1200px",
+            "wideSize": "1600px"
+        },
+        "spacing": {
+            "units": [
+                "px",
+                "em",
+                "rem",
+                "%",
+                "vh",
+                "vw"
+            ]
+        },
+        "color": {
+            "palette": []
+        },
+        "typography": {
+            "fontSizes": [],
+            "fontFamilies": []
+        }
+    }
+}

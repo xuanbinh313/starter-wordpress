@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "mytheme/static-block",
+    "title": "Static PHP Block",
+    "category": "widgets",
+    "icon": "smiley",
+    "description": "Block thuần PHP, không cần JS",
+    "editorScript": "file:./build/index.js",
+    "supports": {
+        "html": false
+    }
+}

@@ -1,0 +1,192 @@
+﻿/*
+* Copyright 2014 Seven Spikes Ltd. All rights reserved. (http://www.nop-templates.com)
+* http://www.nop-templates.com/t/licensinginfo
+*/
+
+.gallery .ribbon-wrapper {
+    font-size: 0;
+    overflow: hidden;
+}
+.gallery .ribbon-wrapper img {
+	max-width: 100%;
+}
+.ribbon-position.top-right {
+    top: 6px !important;
+    right: 6px;
+}
+
+.ribbon-position.top-left {
+    top: 6px;
+    left: 6px;
+}
+.ribbon-position.top-middle {
+    top: 6px;
+}
+
+
+.ribbon-position.bottom-right {
+    bottom: 6px;
+    right: 6px;
+}
+
+.ribbon-position.bottom-left {
+    bottom: 6px;
+    left: 6px;
+}
+
+.ribbon-position.bottom-middle {
+    bottom: 6px;
+}
+
+.ribbon-position.right-middle {
+    right: 6px;
+}
+.ribbon-position.left-middle {
+    left: 6px;
+}
+
+@media all and (max-width:1024px) {
+    .product-list .ribbon-wrapper {
+        float: none !important;
+    }
+}
+
+
+@media all and (min-width: 1025px) {
+    .product-list .ribbon-wrapper + .details {
+        margin: 0 0 0 240px;
+    }
+
+    .spc-categories .ribbon-wrapper {
+	    float: left;
+	    width: 45%;
+    }
+    .spc-categories .ribbon-wrapper .picture {
+	    width: 100%;
+    }
+
+}
+
+@media all and (min-width: 1367px) {
+	
+.spc-categories .ribbon-wrapper {
+	width: 40%;
+}
+
+}
+.top-left .ribbon-text {
+    border-radius: 4px;
+    background: #e98c32;
+    padding: 5px;
+    min-width: 100px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.top-right .product-ribbon .ribbon-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+    padding: 6px 26px 6px 12px;
+    margin-right: -6px;
+    margin-top: -6px;
+    color: #fff;
+    border-radius: 13px;
+    font-weight: 700px;
+    transition: all .4s ease-in-out;
+    white-space: nowrap;
+}
+.top-right .product-ribbon .icon {
+    height: 14px;
+    width: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right .cay .icon {
+    background: url('icon/7.png') no-repeat center right;
+    background-size: contain;
+}
+.top-right .cay .ribbon-text {
+    background: #ff0000 url('icon/7-2.png') no-repeat center right 6px;
+}
+.top-right .ribbon-text:hover {
+    opacity: 1;
+}
+
+.top-right .chay .icon {
+    background: url('icon/6.png') no-repeat center right;
+    background-size: contain;
+}
+
+.top-right .chay .ribbon-text {
+    background: #00b041 url('icon/6-2.png') no-repeat center right 6px !important;
+}
+
+.top-right .đặc-biệt .icon {
+    background: url('icon/5.png') no-repeat center right;
+    background-size: contain;
+}
+
+.top-right .đặc-biệt .ribbon-text {
+    background: #006a31 url('icon/5-2.png') no-repeat center right 6px !important;
+    background-size: contain;
+}
+
+.top-right .bán-chạy .icon {
+    background: url('icon/1.png') no-repeat center right;
+    background-size: contain;
+}
+
+.top-right .bán-chạy .ribbon-text {
+    background: #ff0000 url('icon/1-2.png') no-repeat center right 6px !important;
+    background-size: contain;
+}
+
+.top-right .độc-đáo .icon {
+    background: url('icon/2.png') no-repeat center right;
+    background-size: contain;
+}
+
+.top-right .độc-đáo .ribbon-text {
+    background: #030000 url('icon/2-2.png') no-repeat center right 6px !important;
+    background-size: contain;
+    color: #ffdd78;
+}
+
+.top-right .mới .icon {
+    background: url('icon/4.png') no-repeat center right;
+    background-size: contain;
+}
+
+.top-right .mới .ribbon-text {
+    background: #00b041 url('icon/4-2.png') no-repeat center right 6px !important;
+    background-size: contain;
+}
+
+.top-right .giới-hạn .icon {
+    background: url('icon/3.png') no-repeat center right;
+    background-size: contain;
+}
+
+.top-right .giới-hạn .ribbon-text {
+    background: #803d1b url('icon/3-2.png') no-repeat center right 6px !important;
+    background-size: contain;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .custom-margin-top-ribbon{
+        margin-top: 35px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .custom-margin-top-ribbon {
+        margin-top: 15px;
+    }
+}

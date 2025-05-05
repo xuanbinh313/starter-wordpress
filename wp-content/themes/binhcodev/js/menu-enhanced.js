@@ -34,7 +34,6 @@ document.querySelectorAll('.item').forEach(item => {
         console.log(window.menu_items)
         const id = item.getAttribute('data-id');
         const content = renderMenuItems(id, window.menu_items);
-        console.log(content)
         const result = content.map(item => `
             <div data-v-20128574="" class="w-[20%] min-w-[185px] h-fit px-[10px] pt-[5px] pb-[10px] shrink-0">
                 <strong class="text-sm font-bold">${item.title}</strong>

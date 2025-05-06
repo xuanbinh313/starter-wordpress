@@ -23,7 +23,7 @@
                         $image_url = get_template_directory_uri() . '/assets/images/default.png'; // fallback
                     }
 
-                    ?>
+            ?>
                     <div class="w-full py-[3px] flex-1 flex items-center rounded-md relative overflow-hidden item"
                         data-id="<?php echo esc_attr($item->ID) ?>" data-v-20128574="">
                         <?php if ($image_url): ?>
@@ -41,7 +41,7 @@
                             <path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"></path>
                         </svg>
                     </div>
-                    <?php
+            <?php
                 }
                 echo '</nav>';
             }
@@ -55,13 +55,15 @@
                     <div class="swiper-wrapper" data-v-452d8909=""
                         style="transition-duration: 300ms; transform: translate3d(-3570px, 0px, 0px);">
                         <div class="swiper-slide" data-v-452d8909="" data-swiper-slide-index="7"
-                            style="width: 704px; margin-right: 10px;"><a
+                            style="width: 704px; margin-right: 10px;">
+                            <a
                                 class="w-full h-full flex items-center slide-banner_8"
                                 href="https://dienthoaivui.com.vn/sua-chua-macbook/thay-man-hinh-macbook"
                                 data-v-452d8909=""><img
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/f36dc00edb0ba09081fbcb6c3a3faa8c.jpg"
                                     loading="lazy" alt="THAY MÀN MACBOOK<br>Từ 1.5 Triệu" style="" width="690"
-                                    height="300" class="w-full rounded-md w800:rounded-none" data-v-452d8909=""></a>
+                                    height="300" class="w-full rounded-md w800:rounded-none" data-v-452d8909="">
+                            </a>
                         </div><!--[-->
                         <div class="swiper-slide" data-v-452d8909="" data-swiper-slide-index="0"
                             style="width: 704px; margin-right: 10px;"><a
@@ -130,14 +132,16 @@
                             class="icon text-2xl" data-v-452d8909="" style="" width="1em" height="1em"
                             viewBox="0 0 24 24" data-v-dc707951="">
                             <path fill="currentColor" d="M17.77 3.77L16 2L6 12l10 10l1.77-1.77L9.54 12z"></path>
-                        </svg></div>
+                        </svg>
+                    </div>
                     <div class="swiper-button-next swiper-button-nav shadow-1dtv invisible w800:visible"
                         data-v-452d8909=""><svg xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
                             class="icon text-2xl" data-v-452d8909="" style="" width="1em" height="1em"
                             viewBox="0 0 24 24" data-v-dc707951="">
                             <path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </div>
                 <div class="swiper-pagination w800:hidden swiper-pagination-bullets swiper-pagination-horizontal"
                     data-v-452d8909=""><span class="swiper-pagination-bullet"></span><span

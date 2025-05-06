@@ -5,6 +5,25 @@ function my_fse_theme_setup()
     add_theme_support('editor-styles');
 }
 add_action('after_setup_theme', 'my_fse_theme_setup');
+
+function mytheme_setup()
+{
+    add_theme_support('custom-logo', [
+        'height' => 40,
+        'width' => 200,
+        'flex-height' => true,
+        'flex-width' => true,
+    ]);
+}
+add_action('after_setup_theme', 'mytheme_setup');
+
+function mytheme_register_menus()
+{
+    register_nav_menus([
+        'primary_menu' => __('Primary Menu', 'mytheme'),
+    ]);
+}
+add_action('after_setup_theme', 'mytheme_register_menus');
 function my_theme_enqueue_styles()
 {
     // Enqueue the main stylesheet
@@ -24,6 +43,7 @@ function my_theme_enqueue_styles()
 
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('enqueue_block_editor_assets', 'my_theme_enqueue_styles');
+
 // register theme 
 function my_theme_register_blocks()
 {

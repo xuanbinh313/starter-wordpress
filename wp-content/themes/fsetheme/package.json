@@ -1,13 +1,13 @@
 {
-    "name": "my-fse-theme",
-    "scripts": {
-        "build": "wp-scripts build blocks/static-block/index.js --output-path=blocks/static-block/build",
-        "start": "wp-scripts start blocks/static-block/index.js --output-path=blocks/static-block/build"
-    },
-    "devDependencies": {
-        "@wordpress/scripts": "^26.0.0"
-    },
-    "dependencies": {
-        "@wordpress/server-side-render": "^5.22.0"
-    }
+  "name": "my-fse-theme",
+  "scripts": {
+    "build": "node build-blocks.js",
+    "start": "node build-blocks.js"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  },
+  "dependencies": {
+    "@wordpress/server-side-render": "^5.22.0"
+  }
 }

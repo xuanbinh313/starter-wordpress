@@ -6,6 +6,7 @@
     "icon": "smiley",
     "description": "Header block display in Home",
     "editorScript": "file:./build/index.js",
+    "style": "file:./style.css",
     "supports": {
         "html": false
     }

@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "mytheme/header-block",
+    "title": "Header Block",
+    "category": "widgets",
+    "icon": "smiley",
+    "description": "Header block display in Home",
+    "editorScript": "file:./build/index.js",
+    "supports": {
+        "html": false
+    }
+}

@@ -1,34 +1,9 @@
 <!-- wp:template-part {"slug":"header","tagName":"header", "className": "header header-transition fixed top-0 left-0 w-screen bg-[#fff] z-[1000]"} /-->
+<div
+  class="mt-[135px] w800:mt-[110px] max-w-[1200px] h-fit w-full m-auto py-[10px] px-[5px] bg-[#fff]"
+>
+  <!-- wp:post-content {"className":"w-full bg-[#fff] rounded-lg p-0"} /-->
+</div>
 
-<!-- wp:post-content /-->
-<script type="module">
-  import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
-  var swiperTitle = new Swiper(".title-swiper", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  const swiper = new Swiper(".banner-swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: swiperTitle,
-    },
-  });
-</script>
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+  

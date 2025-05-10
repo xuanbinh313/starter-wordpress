@@ -1,8 +1,12 @@
 <?php
 function my_fse_theme_setup()
 {
-    add_theme_support('block-template-parts');
+    // Remove block template parts support
+    // add_theme_support('block-template-parts');
     add_theme_support('editor-styles');
+
+    // Add only basic Elementor support
+    add_theme_support('elementor');
 }
 add_action('after_setup_theme', 'my_fse_theme_setup');
 
@@ -14,6 +18,9 @@ function mytheme_setup()
         'flex-height' => true,
         'flex-width' => true,
     ]);
+
+    // Add Elementor page templates support
+    add_theme_support('elementor-templates');
 }
 add_action('after_setup_theme', 'mytheme_setup');
 
@@ -24,6 +31,7 @@ function mytheme_register_menus()
     ]);
 }
 add_action('after_setup_theme', 'mytheme_register_menus');
+
 function my_theme_enqueue_styles()
 {
     // Enqueue the main stylesheet
@@ -44,68 +52,27 @@ function my_theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('enqueue_block_editor_assets', 'my_theme_enqueue_styles');
 
-// register theme 
-function my_theme_register_blocks()
+// Remove all block registration functions since we're moving to Elementor
+
+// Include Elementor widgets
+require_once get_template_directory() . '/elementor-widgets.php';
+
+// Add custom CSS to hide Pro elements
+function hide_elementor_pro_elements_css()
 {
-    $block_dir = get_template_directory() . '/blocks/simple-block';
-
-    register_block_type($block_dir, [
-        'render_callback' => function ($attributes, $content, $block) use ($block_dir) {
-            ob_start();
-            include $block_dir . '/render.php';
-            return ob_get_clean();
+    ?>
+    <style>
+        /* Hide any elementor-panel-category that contains eicon-upgrade-crown */
+        .elementor-panel-category:has(.eicon-upgrade-crown) {
+            display: none !important;
         }
-    ]);
+
+        .elementor-element-wrapper.elementor-element--promotion {
+            display: none !important;
+        }
+    </style>
+    <?php
 }
-add_action('init', 'my_theme_register_blocks');
-
-function mytheme_register_all_blocks() {
-    // Đường dẫn đến thư mục blocks
-    $blocks_dir = get_template_directory() . '/blocks';
-
-    // Đọc tất cả thư mục trong /blocks
-    $block_folders = scandir($blocks_dir);
-
-    foreach ($block_folders as $folder) {
-        if ($folder === '.' || $folder === '..') {
-            continue;
-        }
-
-        $block_dir = $blocks_dir . '/' . $folder;
-        $render_file = $block_dir . '/render.php';
-
-        // Chỉ đăng ký nếu có render.php
-        if (is_dir($block_dir) && file_exists($render_file)) {
-            register_block_type($block_dir, [
-                'render_callback' => function ($attributes, $content, $block) use ($render_file) {
-                    ob_start();
-                    include $render_file;
-                    return ob_get_clean();
-                }
-            ]);
-        }
-    }
-}
-
-add_action('init', 'mytheme_register_all_blocks');
-
-
-// Tự động đăng ký tất cả block trong thư mục /blocks
-add_action('init', function() {
-    $blocks_dir = get_template_directory() . '/blocks';
-    
-    // Quét tất cả thư mục trong /blocks
-    foreach (glob($blocks_dir . '/*/block.json') as $block_json) {
-        // Đường dẫn thư mục block
-        $block_dir = dirname($block_json);
-        $block_data = json_decode(file_get_contents($block_json), true);
-
-        // Đăng ký block với render (cho dynamic block)
-        register_block_type($block_dir, [
-            'render_callback' => isset($block_data['render']) ? function($attributes, $content) use ($block_data) {
-                return $block_data['render']($attributes, $content);
-            } : null,
-        ]);
-    }
-});
-
+add_action('elementor/editor/after_enqueue_styles', 'hide_elementor_pro_elements_css');
+add_action('elementor/editor/before_enqueue_scripts', 'hide_elementor_pro_elements_css');
+add_action('admin_head', 'hide_elementor_pro_elements_css');

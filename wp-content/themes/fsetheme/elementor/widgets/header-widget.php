@@ -3,24 +3,30 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class FSE_Header_Widget extends \Elementor\Widget_Base {
-    public function get_name() {
+class FSE_Header_Widget extends \Elementor\Widget_Base
+{
+    public function get_name()
+    {
         return 'fse_header';
     }
 
-    public function get_title() {
+    public function get_title()
+    {
         return esc_html__('FSE Header', 'fsetheme');
     }
 
-    public function get_icon() {
+    public function get_icon()
+    {
         return 'eicon-header';
     }
 
-    public function get_categories() {
+    public function get_categories()
+    {
         return ['fse-category'];
     }
 
-    protected function register_controls() {
+    protected function register_controls()
+    {
         // Banner Section
         $this->start_controls_section(
             'banner_section',
@@ -128,13 +134,14 @@ class FSE_Header_Widget extends \Elementor\Widget_Base {
         $this->end_controls_section();
     }
 
-    protected function render() {
+    protected function render()
+    {
         $settings = $this->get_settings_for_display();
-        ?>
+?>
         <!-- Banner Header -->
         <div class="banner-header w-full h-[45px] bg-[#fff]">
             <div class="w-full h-full mx-auto max-w-[1200px]">
-                <div class="swiper swiper-initialized swiper-horizontal w-full h-full swiper-backface-hidden">
+                <div class="swiper-container w-full h-full">
                     <div class="swiper-wrapper">
                         <?php foreach ($settings['banner_slides'] as $slide) : ?>
                             <div class="swiper-slide !h-full !flex items-center justify-center">
@@ -155,6 +162,30 @@ class FSE_Header_Widget extends \Elementor\Widget_Base {
                         </svg>
                     </div>
                 </div>
+                <script>
+                    jQuery(document).ready(function($) {
+                        if (typeof Swiper !== 'undefined') {
+                            new Swiper('.swiper-container', {
+                                slidesPerView: 3,
+                                // loop: true,
+                                // autoplay: {
+                                //     delay: 3000,
+                                //     disableOnInteraction: false,
+                                // },
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                }
+                            });
+                        } else {
+                            console.error('Swiper not loaded. Make sure it is enqueued.');
+                        }
+                    });
+                </script>
             </div>
         </div>
 
@@ -211,6 +242,6 @@ class FSE_Header_Widget extends \Elementor\Widget_Base {
                 </div>
             </div>
         </div>
-        <?php
+<?php
     }
 }

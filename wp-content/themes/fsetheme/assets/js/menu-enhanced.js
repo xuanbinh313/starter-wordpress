@@ -112,6 +112,7 @@ document?.addEventListener("DOMContentLoaded", function () {
   });
   const swiperTest = new Swiper(".swiper", {
     // Optional parameters
+    slidesPerView: 3,
     direction: "horizontal",
     loop: true,
     autoplay: {

@@ -76,3 +76,13 @@ function hide_elementor_pro_elements_css()
 add_action('elementor/editor/after_enqueue_styles', 'hide_elementor_pro_elements_css');
 add_action('elementor/editor/before_enqueue_scripts', 'hide_elementor_pro_elements_css');
 add_action('admin_head', 'hide_elementor_pro_elements_css');
+
+function enqueue_swiper_scripts() {
+    // Enqueue Swiper CSS
+    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+    
+    // Enqueue Swiper JS
+    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_swiper_scripts');
+add_action('elementor/frontend/after_enqueue_scripts', 'enqueue_swiper_scripts');
